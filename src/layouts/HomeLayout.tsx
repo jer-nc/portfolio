@@ -7,7 +7,7 @@ interface Props {
 }
 const HomeLayout = ({ children }: Props) => {
     return (
-        <div className='max-w-[1200px] mx-auto w-full'>
+        <div className='max-w-[1200px] mx-auto w-full px-8'>
             {children}
         </div>
     )
