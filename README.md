@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio
 
-## Getting Started
+This is my personal web portfolio developed using `Next.js 13`, `Tailwind CSS`, and `shadcn/ui`. It also includes a contact form that connects to an AWS Lambda function with SES to manage visitor messages.
 
-First, run the development server:
+## Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Demo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![](./public/demo-portfolio.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can view my portfolio live [here](https://main.dmemti1gb0mwe.amplifyapp.com/).
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js:** I used Next.js as a web development framework to create a fast and efficient website.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Tailwind CSS:** I used Tailwind CSS to design and style the user interface efficiently and customizably.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Shadcn:** Reusable components built using Radix UI and Tailwind CSS.
 
-## Deploy on Vercel
+- **AWS Lambda and SES:** I implemented a Lambda function on AWS to handle the contact form, and I use Simple Email Service (SES) to send emails.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions or comments, please feel free to reach out to me:
+
+- Email: [jer.info.dev@email.com](mailto:jer.info.dev@email.com)
