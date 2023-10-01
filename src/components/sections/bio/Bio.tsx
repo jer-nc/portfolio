@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import heroImage from '../../../../public/aws-blender.png'
+import heroImage from '../../../../public/aws-blender.webp'
 
 const Bio = () => {
     return (

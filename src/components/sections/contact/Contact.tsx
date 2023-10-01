@@ -22,11 +22,11 @@ const Contact = () => {
             I&apos;ll be delighted to answer any questions.
           </p>
           <div className='pt-4 md:pt-12 flex gap-2 w-full'>
-            <Button onClick={() => handleOpenLink('https://github.com/jer-nc')} variant='outline' size='icon'>
+            <Button title='github' onClick={() => handleOpenLink('https://github.com/jer-nc')} variant='outline' size='icon'>
               <GitHubLogoIcon />
             </Button>
 
-            <Button onClick={() => handleOpenLink('https://twitter.com/rej_nc')} variant='outline' size='icon'>
+            <Button title='twitter' onClick={() => handleOpenLink('https://twitter.com/rej_nc')} variant='outline' size='icon'>
               <TwitterLogoIcon />
             </Button>
           </div>

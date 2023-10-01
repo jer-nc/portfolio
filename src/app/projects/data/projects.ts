@@ -1,10 +1,10 @@
 import { PROJECT_TYPE } from '@/constants/projectType';
-import nextCognito from '../../../../public/assets/next-cognito.png';
-import sesLambda from '../../../../public/assets/lambda-ses.png';
-import blenderLambda from '../../../../public/assets/blender-lambda.png';
-import readmeStack from '../../../../public/assets/readmestack.png';
-import portfolio from '../../../../public/assets/portfolio.png';
-import r2r from '../../../../public/assets/r2r.png';
+import nextCognito from '../../../../public/assets/next-cognito.webp';
+import sesLambda from '../../../../public/assets/lambda-ses.webp';
+import blenderLambda from '../../../../public/assets/blender-lambda.webp';
+import readmeStack from '../../../../public/assets/readmestack.webp';
+import portfolio from '../../../../public/assets/portfolio.webp';
+import r2r from '../../../../public/assets/r2r.webp';
 
 export const projects = [
     {

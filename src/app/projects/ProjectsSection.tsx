@@ -53,16 +53,16 @@ const ProjectsSection = () => {
                             <CardFooter className='flex justify-end gap-2 font-semibold'>
                                 {project.projectType === PROJECT_TYPE.GITHUB_WEBSITE && (
                                     <>
-                                        <Button disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
+                                        <Button title={project.title} disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
                                             <GitHubLogoIcon />
                                         </Button>
 
-                                        <Button disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.link)} variant='outline'>Visit</Button>
+                                        <Button title={project.title} disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.link)} variant='outline'>Visit</Button>
                                     </>
                                 )}
                                 {project.projectType === PROJECT_TYPE.GITHUB && (
                                     <>
-                                        <Button disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
+                                        <Button title={project.title} disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
                                             <GitHubLogoIcon />
                                         </Button>
 
@@ -70,7 +70,7 @@ const ProjectsSection = () => {
                                 )}
                                 {project.projectType === PROJECT_TYPE.WEBSITE && (
                                     <>
-                                        <Button disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.link)} variant='outline'>Visit</Button>
+                                        <Button title={project.title} disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.link)} variant='outline'>Visit</Button>
                                     </>
                                 )}
                             </CardFooter>
