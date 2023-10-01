@@ -17,8 +17,8 @@ const Contact = () => {
       </div>
       <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[20rem] w-full'>
         <div>
-          <p className='text-muted-foreground'>
-            You can reach out to me through social media or send me a message to my personal email <span className='text-blue-500'> <a href="mailto:jer.info.dev@gmail.com">jer.info.dev@gmail.com</a></span>.
+          <p className='text-primary'>
+            You can reach out to me through social media or send me a message to my personal email <span className='text-blue-600 font-semibold'> <a href="mailto:jer.info.dev@gmail.com">jer.info.dev@gmail.com</a></span>.
             I&apos;ll be delighted to answer any questions.
           </p>
           <div className='pt-4 md:pt-12 flex gap-2 w-full'>

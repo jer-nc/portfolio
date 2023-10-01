@@ -41,11 +41,11 @@ const ResumeSection = () => {
             </div>
             <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 w-full'>
                 <div>
-                    <p className='text-muted-foreground'>
+                    <p className='text-primary'>
                         I&apos;m a second-year student of Multiplatform Application Development (DAM) in Barcelona with a passion for technology and a self-directed approach to learning.
                     </p>
                     <br />
-                    <p className='text-muted-foreground'>
+                    <p className='text-primary'>
                         I&apos;ve acquired a set of technical skills in web development and cloud computing, including <b>React</b> , <b>Next.js</b>, <b>TypeScript</b>, and <b>AWS</b>. My goal is to solidify my knowledge in AWS and leverage it to design and develop scalable and efficient Cloud solutions.
                     </p>
                     <div className='flex flex-col md:flex-row gap-4 pt-8'>
