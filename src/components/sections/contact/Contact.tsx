@@ -21,7 +21,7 @@ const Contact = () => {
             You can reach out to me through social media or send me a message to my personal email <span className='text-blue-500'> <a href="mailto:jer.info.dev@gmail.com">jer.info.dev@gmail.com</a></span>.
             I&apos;ll be delighted to answer any questions.
           </p>
-          <div className='pt-12 flex gap-2 w-full'>
+          <div className='pt-4 md:pt-12 flex gap-2 w-full'>
             <Button onClick={() => handleOpenLink('https://github.com/jer-nc')} variant='outline' size='icon'>
               <GitHubLogoIcon />
             </Button>

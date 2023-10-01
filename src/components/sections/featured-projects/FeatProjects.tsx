@@ -23,7 +23,7 @@ const FeatProjects = () => {
                 {projects.slice(0, 4).map((project, index) => (
                     <Card className='rounded-md flex w-full' key={index}>
                         <div className='w-72'>
-                            <Image style={{ maxHeight: '350px' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
+                            <Image style={{ maxHeight: '360px' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
                         </div>
                         <div className='h-full grid w-full'>
                             <CardHeader>

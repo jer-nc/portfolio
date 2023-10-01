@@ -5,7 +5,7 @@ import heroImage from '../../../../public/aws-blender.png'
 const Bio = () => {
     return (
         <section className='w-full py-12 grid'>
-            <div className='pt-8 grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center'>
+            <div className='md:pt-8 grid grid-cols-1 md:grid-cols-2 gap-12 justify-center items-center'>
                 <div>
                     <h1 className='mx-auto text-5xl font-bold text-primary'>
                        Jer NC
