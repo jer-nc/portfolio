@@ -2,16 +2,13 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import { GitHubLogoIcon } from "@radix-ui/react-icons"
+import { handleOpenLink } from '@/lib/handleExternalLink'
 const GithubButton = () => {
 
-    const externalUrl = 'https://github.com/jer-nc'; // Reemplaza con tu URL externa
-
-    const handleClick = () => {
-        window.open(externalUrl, '_blank'); // Abre la URL en una nueva pestaña o ventana
-    }
+    const externalUrl = 'https://github.com/jer-nc';
 
     return (
-        <Button variant='outline' size="icon" onClick={handleClick}>
+        <Button variant='outline' size="icon" onClick={() => handleOpenLink(externalUrl)}>
             <GitHubLogoIcon />
         </Button>
     )
