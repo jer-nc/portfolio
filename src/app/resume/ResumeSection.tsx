@@ -7,7 +7,7 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar"
 import { Button } from '@/components/ui/button'
-import profile from '../../../public/assets/profile.jpg'
+import profile from '../../../public/assets/profile.webp'
 
 const ResumeSection = () => {
 

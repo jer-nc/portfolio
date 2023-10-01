@@ -27,7 +27,7 @@ const Navbar = () => {
                 <NavbarButtons />
                 <NavbarMobile />
                 <div className='flex gap-2 items-center'>
-                    <Button onClick={() => router.push('/#contact')} variant='outline'>
+                    <Button title='contact' onClick={() => router.push('/#contact')} variant='outline'>
                         Contact
                     </Button>
                     <GithubButton />

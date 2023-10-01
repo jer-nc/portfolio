@@ -8,7 +8,7 @@ const GithubButton = () => {
     const externalUrl = 'https://github.com/jer-nc';
 
     return (
-        <Button variant='outline' size="icon" onClick={() => handleOpenLink(externalUrl)}>
+        <Button title='github' variant='outline' size="icon" onClick={() => handleOpenLink(externalUrl)}>
             <GitHubLogoIcon />
         </Button>
     )
