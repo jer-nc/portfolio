@@ -1,24 +1,25 @@
 'use client'
-import React from 'react'
-import { GitHubLogoIcon, LightningBoltIcon } from "@radix-ui/react-icons"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { technologyIcons } from '@/components/sections/featured-projects/technologyIcons'
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { GitHubLogoIcon, StarIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
-import { technologyIcons } from './technologyIcons'
+import React from 'react'
+import { projects } from './data/projects'
 import { Button } from '@/components/ui/button'
 import { PROJECT_TYPE } from '@/constants/projectType'
-import { projects } from '@/app/projects/data/projects'
 import { handleOpenLink } from '@/lib/handleExternalLink'
 
-const FeatProjects = () => {
+const ProjectsSection = () => {
 
+ 
     return (
         <section className='py-12'>
             <div className='flex gap-4 items-center'>
-                <LightningBoltIcon className='mt-1' />
-                <h1 className='text-2xl font-semibold'>FEATURED PROJECTS</h1>
+                <StarIcon className='mt-1' />
+                <h1 className='text-2xl font-semibold'>PROJECTS</h1>
             </div>
             <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 min-h-[20rem] w-full'>
-                {projects.slice(0, 4).map((project, index) => (
+                {projects.map((project, index) => (
                     <Card className='rounded-md flex w-full' key={index}>
                         <div className='w-72 h-full'>
                             <Image style={{ width: 'auto' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={1000} alt='avatar' />
@@ -47,7 +48,7 @@ const FeatProjects = () => {
                                     </CardDescription>
                                 </div>
                             </CardContent>
-                            <CardFooter className='flex gap-2 justify-end font-semibold'>
+                            <CardFooter className='flex justify-end gap-2 font-semibold'>
                                 {project.projectType === PROJECT_TYPE.GITHUB_WEBSITE && (
                                     <>
                                         <Button disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
@@ -76,7 +77,7 @@ const FeatProjects = () => {
                 ))}
             </div>
         </section>
-    );
+    )
 }
 
-export default FeatProjects;
+export default ProjectsSection
