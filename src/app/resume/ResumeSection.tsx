@@ -7,6 +7,7 @@ import {
     AvatarImage,
 } from "@/components/ui/avatar"
 import { Button } from '@/components/ui/button'
+import profile from '../../../public/assets/profile.jpg'
 
 const ResumeSection = () => {
 
@@ -60,7 +61,7 @@ const ResumeSection = () => {
                 </div>
                 <div className='flex justify-center items-start'>
                     <Avatar className='w-56 h-56 border shadow-sm'>
-                        <AvatarImage src='https://pbs.twimg.com/profile_images/1707387078843969536/y53dKIK__400x400.jpg' alt="resume-photo" />
+                        <AvatarImage src={profile.src} alt="resume-photo" />
                         <AvatarFallback>J</AvatarFallback>
                     </Avatar>
                 </div>
