@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
@@ -9,8 +9,13 @@ import { contactShema } from './contactSchema'
 import { useForm } from 'react-hook-form'
 import { Textarea } from '@/components/ui/textarea'
 import { Card, CardContent } from '@/components/ui/card'
+import { ReloadIcon } from '@radix-ui/react-icons'
+import { Toaster } from '@/components/ui/toaster'
+import { useToast } from '@/components/ui/use-toast'
 
 const ContactForm = () => {
+    const [loading, setLoading] = useState(false)
+    const { toast } = useToast()
 
     const form = useForm<z.infer<typeof contactShema>>({
         resolver: zodResolver(contactShema),
@@ -24,6 +29,7 @@ const ContactForm = () => {
 
     function onSubmit(values: z.infer<typeof contactShema>) {
         console.log(values)
+        setLoading(true)
         const lambdUrl = process.env.NEXT_PUBLIC_LAMBDA_URL
 
         if (lambdUrl) {
@@ -32,10 +38,23 @@ const ContactForm = () => {
                 body: JSON.stringify(values)
             }).then(res => res.json())
                 .then(data => console.log(data))
+                .then(() => {
+                    setLoading(false)
+                    form.reset()
+                    handleShowToaster()
+                })
                 .catch(err => console.log(err))
         } else {
             console.log('Lambda URL is not defined')
         }
+    }
+
+    const handleShowToaster = () => {
+        toast({
+            title: "Message sent successfully", 
+            description: "I will get back to you as soon as possible",
+          })
+        console.log('show toaster')
     }
 
 
@@ -52,7 +71,7 @@ const ContactForm = () => {
                                 <FormItem>
                                     <FormLabel className='text-black dark:text-white'>Name</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Enter your name" {...field} />
+                                        <Input disabled={loading} placeholder="Enter your name" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -65,7 +84,7 @@ const ContactForm = () => {
                                 <FormItem>
                                     <FormLabel className='text-black dark:text-white'>Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Enter your email" {...field} />
+                                        <Input disabled={loading} placeholder="Enter your email" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -78,15 +97,23 @@ const ContactForm = () => {
                                 <FormItem>
                                     <FormLabel className='text-black dark:text-white'>Message</FormLabel>
                                     <FormControl>
-                                        <Textarea className='h-24 resize-none' placeholder="Enter your message" {...field} />
+                                        <Textarea disabled={loading} className='h-24 resize-none' placeholder="Enter your message" {...field} />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
                         />
-                        <Button className='w-full dark:text-white' size='lg' type="submit">Send</Button>
+                        {
+                            !loading ? <Button className='w-full dark:text-white' size='lg' type="submit">Send</Button> : (
+                                <Button disabled className='w-full dark:text-white' size='lg' type="submit">
+                                    <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+                                    Sending...
+                                </Button>
+                            )
+                        }
                     </form>
                 </Form>
+                <Toaster />
             </CardContent>
         </Card>
     )
