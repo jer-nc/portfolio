@@ -10,10 +10,10 @@ const Bio = () => {
                     <h1 className='mx-auto text-5xl font-bold text-primary'>
                        Jer NC
                     </h1>
-                    <p className='pt-4 leading-6 text-muted-foreground font-semibold'>
+                    <p className='pt-4 leading-6 text-primary font-semibold'>
                         I&apos;m a student from Barcelona, Spain, and I&apos;m interested in working on complete projects. Initially, I started in frontend development, but my focus has shifted towards AWS infrastructure.
                     </p>
-                    <p className='pt-8 leading-6 text-muted-foreground font-normal'>
+                    <p className='pt-8 leading-6 text-primary font-normal'>
                         Currently, I&apos;m experimenting with 3D scene rendering in the Cloud using AWS and Blender.
                     </p>
                 </div>
