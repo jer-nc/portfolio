@@ -37,7 +37,7 @@ const ContactForm = () => {
                 method: 'POST',
                 body: JSON.stringify(values)
             }).then(res => res.json())
-                .then(data => console.log(data))
+                // .then(data => console.log(data))
                 .then(() => {
                     setLoading(false)
                     form.reset()
@@ -54,7 +54,6 @@ const ContactForm = () => {
             title: "Message sent successfully", 
             description: "I will get back to you as soon as possible",
           })
-        console.log('show toaster')
     }
 
 

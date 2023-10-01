@@ -63,9 +63,9 @@ export const projects = [
         description: 'Current Portfolio Web Page',
         technologies: ['next', 'typescript', 'aws', 'tailwindcss', 'shad'],
         imageType: 'cover',
-        status: 'In Progress',
+        status: 'Active',
         link: '#',
-        githubUrl: '',
+        githubUrl: 'https://github.com/jer-nc/portfolio',
     },
     {
         projectType: PROJECT_TYPE.GITHUB_WEBSITE,
