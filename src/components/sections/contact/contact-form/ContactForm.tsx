@@ -41,7 +41,7 @@ const ContactForm = () => {
 
     return (
         <Card>
-            <CardContent className='pt-8'>
+            <CardContent className='pt-8 px-4 md:px-6'>
 
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">

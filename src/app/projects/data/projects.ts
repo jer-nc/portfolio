@@ -1,10 +1,10 @@
 import { PROJECT_TYPE } from '@/constants/projectType';
-import heroImage from '../../../../public/aws-blender.png';
 import nextCognito from '../../../../public/assets/next-cognito.png';
 import sesLambda from '../../../../public/assets/lambda-ses.png';
 import blenderLambda from '../../../../public/assets/blender-lambda.png';
 import readmeStack from '../../../../public/assets/readmestack.png';
 import portfolio from '../../../../public/assets/portfolio.png';
+import r2r from '../../../../public/assets/r2r.png';
 
 export const projects = [
     {
@@ -71,12 +71,12 @@ export const projects = [
         projectType: PROJECT_TYPE.GITHUB_WEBSITE,
         timestamp: '',
         title: 'Static Website with NextJS',
-        image: heroImage,
+        image: r2r,
         description: 'Real Estate Static Website with NextJS and TailwindCSS',
         technologies: ['next', 'typescript', 'aws', 'tailwindcss', 'shad'],
-        imageType: 'contain',
+        imageType: 'cover',
         status: 'In Progress',
-        link: '#',
-        githubUrl: '',
+        link: 'https://main.d2pncs0hhp6niy.amplifyapp.com/',
+        githubUrl: 'https://github.com/jer-nc/r2r-next-13',
     },
 ];

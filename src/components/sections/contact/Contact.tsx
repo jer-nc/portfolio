@@ -10,7 +10,9 @@ const Contact = () => {
   return (
     <section id='contact' className='py-12'>
       <div className='flex gap-4 items-center'>
-        <EnvelopeClosedIcon className='mt-1' />
+        <div className='w-12 h-12 bg-secondary rounded-full flex justify-center items-center'>
+          <EnvelopeClosedIcon className='text-blue-500' />
+        </div>
         <h1 className='text-2xl font-semibold'>GET IN TOUCH</h1>
       </div>
       <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-[20rem] w-full'>

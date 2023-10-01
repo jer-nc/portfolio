@@ -33,7 +33,9 @@ const ResumeSection = () => {
     return (
         <section className='py-12'>
             <div className='flex gap-4 items-center'>
-                <FileTextIcon className='mt-1' />
+                <div className='w-12 h-12 bg-secondary rounded-full flex justify-center items-center'>
+                    <FileTextIcon className='text-blue-500' />
+                </div>
                 <h1 className='text-2xl font-semibold'>RESUME</h1>
             </div>
             <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-12 w-full'>
@@ -45,7 +47,7 @@ const ResumeSection = () => {
                     <p className='text-muted-foreground'>
                         I&apos;ve acquired a set of technical skills in web development and cloud computing, including <b>React</b> , <b>Next.js</b>, <b>TypeScript</b>, and <b>AWS</b>. My goal is to solidify my knowledge in AWS and leverage it to design and develop scalable and efficient Cloud solutions.
                     </p>
-                    <div className='flex gap-4 pt-8'>
+                    <div className='flex flex-col md:flex-row gap-4 pt-8'>
                         <Button onClick={handleDownloadResumeEnglish} variant='outline' className='gap-2'>
                             <DownloadIcon />
                             Download Resume - English

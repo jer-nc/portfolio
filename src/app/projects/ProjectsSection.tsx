@@ -11,18 +11,20 @@ import { handleOpenLink } from '@/lib/handleExternalLink'
 
 const ProjectsSection = () => {
 
- 
+
     return (
         <section className='py-12'>
             <div className='flex gap-4 items-center'>
-                <StarIcon className='mt-1' />
+                <div className='w-12 h-12 bg-secondary rounded-full flex justify-center items-center'>
+                    <StarIcon className='text-blue-500' />
+                </div>
                 <h1 className='text-2xl font-semibold'>PROJECTS</h1>
             </div>
             <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 min-h-[20rem] w-full'>
                 {projects.map((project, index) => (
-                    <Card className='rounded-md flex w-full' key={index}>
-                        <div className='w-72 h-full'>
-                            <Image style={{ width: 'auto' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={1000} alt='avatar' />
+                    <Card className='rounded-md flex w-full ' key={index}>
+                        <div className='w-72'>
+                            <Image style={{ maxHeight: '350px' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
                         </div>
                         <div className='h-full grid w-full'>
                             <CardHeader>
@@ -31,10 +33,10 @@ const ProjectsSection = () => {
                             </CardHeader>
                             <CardContent>
                                 <CardTitle>Technologies</CardTitle>
-                                <div className='grid grid-cols-5  items-center justify-center'>
+                                <div className='grid grid-cols-5 gap-2 items-center justify-center'>
                                     {project.technologies.map((tech, techIndex) => (
                                         <div key={techIndex} className='flex justify-start pt-4'>
-                                            <Image style={{ width: '25px', }} width={20} height={20} src={technologyIcons[tech]?.src} alt={technologyIcons[tech]?.alt} title={technologyIcons[tech]?.alt} />
+                                            <Image style={{ width: '25px' }} width={20} height={20} src={technologyIcons[tech]?.src} alt={technologyIcons[tech]?.alt} title={technologyIcons[tech]?.alt} />
                                         </div>
                                     ))}
                                 </div>
