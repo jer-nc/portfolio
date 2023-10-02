@@ -24,7 +24,7 @@ const ProjectsSection = () => {
                 {projects.map((project, index) => (
                     <Card className='rounded-md flex w-full ' key={index}>
                         <div className='w-72'>
-                            <Image style={{ maxHeight: '360px' }} className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
+                            <Image  className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
                         </div>
                         <div className='h-full grid w-full'>
                             <CardHeader>
@@ -50,7 +50,7 @@ const ProjectsSection = () => {
                                     </CardDescription>
                                 </div>
                             </CardContent>
-                            <CardFooter className='flex justify-end gap-2 font-semibold'>
+                            <CardFooter className='flex justify-end gap-2 items-end font-semibold'>
                                 {project.projectType === PROJECT_TYPE.GITHUB_WEBSITE && (
                                     <>
                                         <Button title={project.title} disabled={project.status === 'In Progress' && true} onClick={() => handleOpenLink(project.githubUrl)} variant='outline' size='icon'>
