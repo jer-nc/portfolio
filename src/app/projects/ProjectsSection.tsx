@@ -22,7 +22,7 @@ const ProjectsSection = () => {
             </div>
             <div className='pt-8 grid grid-cols-1 lg:grid-cols-2 gap-5 min-h-[20rem] w-full'>
                 {projects.map((project, index) => (
-                    <Card className='rounded-md flex w-full ' key={index}>
+                    <Card className='rounded-md flex w-full  md:max-h-[360px]' key={index}>
                         <div className='w-72'>
                             <Image  className={`rounded-l-md ${project.imageType === 'contain' ? 'object-contain' : 'object-cover'}  h-full`} src={project.image} title={project.title} width={1000} height={500} alt='avatar' />
                         </div>
