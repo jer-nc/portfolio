@@ -1,10 +1,10 @@
 import firebaseIcon from '../../../../public/icons/firebase-1.svg'
 import reactIcon from '../../../../public/icons/react-2.svg'
-import awsIcon from '../../../../public/icons/aws-2.svg'
+import awsIcon from '../../../../public/icons/aws.svg'
 import javascriptIcon from '../../../../public/icons/logo-javascript.svg'
-import chakraIcon from '../../../../public/icons/chakra.png'
+import chakraIcon from '../../../../public/icons/chakra.svg'
 import typescriptIcon from '../../../../public/icons/typescript.svg'
-import nextjsIcon from '../../../../public/icons/next-js.svg'
+import nextjsIcon from '../../../../public/icons/nextjs.svg'
 import tailwindIcon from '../../../../public/icons/tailwind-css-2.svg'
 import shadIcon from '../../../../public/icons/shad-icon.ico'
 import { Icon } from '../../../types/IconTypes'; 
