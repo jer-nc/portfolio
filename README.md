@@ -12,7 +12,7 @@ This is my personal web portfolio developed using `Next.js 13`, `Tailwind CSS`, 
 
 ![](./public/demo-portfolio.png)
 
-You can view my portfolio live [here](https://main.dmemti1gb0mwe.amplifyapp.com/).
+You can view my portfolio live [here](https://www.jer-portfolio.com/).
 
 ## Technologies Used
 
