@@ -27,7 +27,7 @@ export const projects = [
         imageType: 'cover',
         description: 'NextJS + Cognito starter template with custom auth flow',
         technologies: ['next', 'typescript', 'aws', 'tailwindcss', 'shad'],
-        status: 'Active',
+        status: 'In Progress',
         link: 'https://main.d3kkcig1n3bvjy.amplifyapp.com/',
         githubUrl: 'https://github.com/jer-nc/cognito-next13-custom-auth-refactor',
     },
