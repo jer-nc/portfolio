@@ -5,6 +5,7 @@ import blenderLambda from '../../../../public/assets/blender-lambda.webp';
 import readmeStack from '../../../../public/assets/readmestack.webp';
 import portfolio from '../../../../public/assets/portfolio.webp';
 import r2r from '../../../../public/assets/r2r.webp';
+import nextCdk from '../../../../public/assets/next-cdk.webp';
 
 export const projects = [
     {
@@ -22,14 +23,14 @@ export const projects = [
     {
         projectType: PROJECT_TYPE.GITHUB_WEBSITE,
         timestamp: '',
-        title: 'NextJS + Cognito',
-        image: nextCognito,
+        title: 'NextJS 13 - Fullstack CRUD AWS CDK',
+        image: nextCdk,
         imageType: 'cover',
-        description: 'NextJS + Cognito starter template with custom auth flow',
+        description: 'Fullstck Book App with NextJS 13 and AWS CDK',
         technologies: ['next', 'typescript', 'aws', 'tailwindcss', 'shad'],
-        status: 'In Progress',
-        link: 'https://main.d3kkcig1n3bvjy.amplifyapp.com/',
-        githubUrl: 'https://github.com/jer-nc/cognito-next13-custom-auth-refactor',
+        status: 'Active',
+        link: 'https://main.d1v7b18a5j9npz.amplifyapp.com/',
+        githubUrl: 'https://github.com/jer-nc/fullstack-book-crud-cdk-nextjs13',
     },
     {
         projectType: PROJECT_TYPE.GITHUB,
@@ -54,6 +55,18 @@ export const projects = [
         status: 'In Progress',
         link: '#',
         githubUrl: '',
+    },
+    {
+        projectType: PROJECT_TYPE.GITHUB_WEBSITE,
+        timestamp: '',
+        title: 'NextJS + Cognito',
+        image: nextCognito,
+        imageType: 'cover',
+        description: 'NextJS + Cognito starter template with custom auth flow',
+        technologies: ['next', 'typescript', 'aws', 'tailwindcss', 'shad'],
+        status: 'In Progress',
+        link: 'https://main.d3kkcig1n3bvjy.amplifyapp.com/',
+        githubUrl: 'https://github.com/jer-nc/cognito-next13-custom-auth-refactor',
     },
     {
         projectType: PROJECT_TYPE.GITHUB,
